@@ -31,23 +31,20 @@ class SettingsPage extends StatelessWidget {
                   children: [
                     CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage("assets/images/boche.webp"),
+                      backgroundImage: AssetImage("assets/images/images.jpeg"),
                     ),
                     SizedBox(width: 20),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Boby Chemmanur",
+                          "Alin Jose Perera ",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
                         ),
-                        Text(
-                          "Alappuzha, kerala",
-                          style: TextStyle(fontSize: 13),
-                        ),
+                        Text("Kochi, kerala", style: TextStyle(fontSize: 13)),
                       ],
                     ),
                     Spacer(),
@@ -59,7 +56,7 @@ class SettingsPage extends StatelessWidget {
                 ),
                 SizedBox(height: 30),
                 Text(
-                  "Hi! My name is boche, I'm a Chemmanur manager from Alappuzha, kerala",
+                  "Hi! My name is perera , I'm  manager from Kochi, kerala",
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 60),

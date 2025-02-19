@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:todo/feature/authentication/view/pages/signup_page.dart';
+import 'package:todo/feature/todo_body/view/pages/Categories_page.dart';
 import 'package:todo/feature/todo_body/view/pages/settings_page.dart';
 
 void main() {
@@ -10,6 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: SettingsPage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CategoriesPage(),
+    );
   }
 }
