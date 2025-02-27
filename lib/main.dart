@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:todo/feature/authentication/view/pages/signup_page.dart';
-import 'package:todo/feature/todo_body/view/pages/Categories_page.dart';
-import 'package:todo/feature/todo_body/view/pages/settings_page.dart';
+import 'package:todo/feature/todo_body/view/pages/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => TodoProvider())],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -12,9 +17,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: CategoriesPage(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SignupPage());
   }
 }

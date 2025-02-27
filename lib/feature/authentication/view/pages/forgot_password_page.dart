@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/feature/authentication/view/pages/signin_page.dart';
 import 'package:todo/feature/authentication/view/widgets/button_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/input_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/link_widget.dart';
@@ -58,6 +59,7 @@ class ForgotPassword extends StatelessWidget {
                 CommonButtonWidget(),
                 SizedBox(height: 30),
                 BottomLinkWidget(
+                  Navigat: SigninPage(),
                   Linktext: "Register",
                   text: "Don't have an account? ",
                 ),
@@ -65,22 +67,7 @@ class ForgotPassword extends StatelessWidget {
             ),
           ),
 
-          // Padding(
-          //    padding: const EdgeInsets.only(left: 35,right: 35),
-          //   child: TextFieldWidget(hintText: "Email"),
-          // ),
-          // SizedBox(height: 30,),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 35,right: 35),
-          //   child: Text("Enter the email address you used to create your account and we will email you a link to reset your password"),
-          // ),
-          // SizedBox(height: 30,),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 35,right: 35),
-          //   child: CommonButtonWidget(),
-          // ),
-          // SizedBox(height: 30,),
-          // BottomLinkWidget(Linktext: "Register", text: "Don't have an account? ")
+          
         ],
       ),
     );

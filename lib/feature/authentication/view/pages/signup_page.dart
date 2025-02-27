@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:todo/feature/authentication/view/pages/forgot_password_page.dart';
+import 'package:todo/feature/authentication/view/pages/signin_page.dart';
 import 'package:todo/feature/authentication/view/widgets/button_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/input_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/link_widget.dart';
@@ -51,6 +52,7 @@ class SignupPage extends StatelessWidget {
               CommonButtonWidget(),
               SizedBox(height: 30),
               BottomLinkWidget(
+                Navigat: SigninPage(),
                 text: "Don't have an account? ",
                 Linktext: "Register",
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/feature/authentication/view/pages/signup_page.dart';
 import 'package:todo/feature/authentication/view/widgets/button_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/input_widget.dart';
 import 'package:todo/feature/authentication/view/widgets/link_widget.dart';
@@ -46,7 +47,7 @@ class SigninPage extends StatelessWidget {
             CommonButtonWidget(),
             SizedBox(height: 40,),
             BottomLinkWidget(Linktext: "Log In", 
-            
+            Navigat: SignupPage(),
             text: "Already have an account? ",
             ),
             

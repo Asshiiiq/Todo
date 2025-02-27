@@ -8,8 +8,6 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back),
-
         title: Padding(
           padding: const EdgeInsets.only(left: 100),
           child: Text(
